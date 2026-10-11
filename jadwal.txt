@@ -1,0 +1,28 @@
+# JADWAL BEL - SMP Wahid Hasyim Kepohbaru (Semester Ganjil 2026/2027)
+#
+# Bel biasa      : HARI,JAM,FILE
+# Putar berdurasi: HARI,MULAI,FILE,BERHENTI  (mulai dari posisi sesuai jam)
+# HARI: 1=Senin 2=Selasa 3=Rabu 4=Kamis 5=Jumat 6=Sabtu 7=Ahad  (* = setiap hari)
+# Contoh gabungan hari: 1234 = Senin-Kamis. Baris diawali # diabaikan.
+
+# Waqiah setiap hari 06:40-07:00 (kalau masuk 06:45, langsung dari menit ke-5)
+*,06:40,waqiah.mp3,07:00
+
+# Senin-Kamis, Sabtu, Ahad
+123467,07:20,jam1.mp3
+123467,08:00,jam2.mp3
+123467,08:40,jam3.mp3
+123467,09:20,jam4.mp3
+123467,10:00,istirahat1.mp3
+123467,10:40,jam5.mp3
+
+# Jam ke-6: Senin-Kamis dan Sabtu (Ahad tidak ada)
+12346,11:20,jam6.mp3
+
+# Senin-Kamis saja
+1234,12:00,istirahat2.mp3
+1234,12:40,jam7.mp3
+1234,13:20,pulang.mp3
+
+# Pulang Sabtu dan Ahad
+67,12:40,pulang.mp3
